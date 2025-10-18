@@ -1,0 +1,25 @@
+{
+  "name": "TRI CONTROLS BOT",
+  "description": "Advanced WhatsApp Session Generator by TRI MSTR DEV STUDIO",
+  "logo": "https://i.imgur.com/teQzVR1.jpeg",
+  "repository": "https://github.com/trimstrdevstudio/tri-controls-bot",
+  "keywords": ["TRI", "GHOSTTRI", "WhatsApp", "Bot", "Session"],
+  "success_url": "/",
+  "buildpacks": [
+    { 
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" 
+    }
+  ],
+  "env": {
+    "PORT": {
+      "description": "Port for web application",
+      "value": "3000",
+      "required": false
+    },
+    "SESSION_PREFIX": {
+      "description": "Prefix for session files",
+      "value": "TRI",
+      "required": false
+    }
+  }
+}
